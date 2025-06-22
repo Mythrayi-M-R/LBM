@@ -1,2 +1,2 @@
-# CFD
-Notes as I learn CFD. 
+# LBM
+Notes as I learn the Lattice Boltzmann Method. 
