@@ -54,8 +54,7 @@ for iteration in range(max_iter):
     f_streamed = np.zeros_like(f)
     for i in range(5):
         ex, ey = e[i]
-        f_streamed[:, :, i] = np.roll(f[:, :, i], shift=ey, axis=0)  # y-direction
-        f_streamed[:, :, i] = np.roll(f_streamed[:, :, i], shift=ex, axis=1)  # x-direction
+        f_streamed[:, :, i] = np.roll(np.roll(f[:, :, i], shift=ey, axis=0), shift=ex, axis=1)
     f = f_streamed
 
     # Boundary conditions
