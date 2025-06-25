@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-nx, ny = 50, 50
-omega = 1.0
-tolerance = 1e-4
+nx, ny = 50, 50 # Lattice
+omega = 1.0  # 1/ tau (relaxation time)
+tolerance = 1e-4 # Convergence condition
 max_iter = 10000  # just in case it doesn't converge
 
 # D2Q9 model
